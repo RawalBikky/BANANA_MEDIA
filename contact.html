@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BANANA MEDIA ~ Form</title>
+
+<link rel="icon" type="image/x-icon" href="assets/images/favicon_v3.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+<section class="contact-page">
+
+  <div class="form-wrapper">
+
+    <h1>BANANA MEDIA Inquiry Form</h1><br><br><br>
+
+    <form>
+
+      <label>Name *</label>
+      <input type="text" placeholder="Your name" required><br><br>
+
+      <label>Where are you from? *</label>
+      <div class="radio-group">
+        <label><input type="radio" name="place" required>INDIA</label>
+        <label><input type="radio" name="place"> Outside INDIA</label><br><br>
+      </div>
+
+      <label>Country Code *</label>
+      <input type="text" id="countryCode" value="+91" readonly><br><br>
+
+      <label>Phone Number *</label>
+      <input type="text" placeholder="without country code" required><br><br>
+
+      <label>Email ID *</label>
+      <input type="email" placeholder="example@email.com" required><br><br>
+
+      <label>What can we help you with? *</label>
+      <textarea rows="4" placeholder="Tell us about your project..." required></textarea><br><br>
+
+      <button type="submit">Submit</button>
+
+      <p class="note">
+        Do not submit passwords through this form.
+      </p>
+
+    </form>
+
+  </div>
+
+</section>
+
+</body>
+</body>
+</html>
