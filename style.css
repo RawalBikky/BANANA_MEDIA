@@ -58,24 +58,22 @@ button {
 }
 /* ================= HEADER ================= */
 
-.raw-header{
-  position:fixed;
-  top:0;
-  width:100%;
-  height:88px;
-  background:rgba(0, 0, 0, 0.55);
-  backdrop-filter:blur(18px);
-  z-index:999;
+.raw-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 88px;
+  background: rgba(0, 0, 0, 0.55);
 }
 
-.raw-nav-wrap{
-  max-width:1320px;
-  height:100%;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:0 60px;
+.raw-nav-wrap {
+  max-width: 1320px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;   /* ⚠️ THIS is big for mobile */
 }
 
 /* LOGO */
@@ -1545,4 +1543,5 @@ button {
     font-weight: 300;
     line-height: 1.6;
     color: #dcdcdc;
+
 }
