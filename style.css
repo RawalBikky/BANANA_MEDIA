@@ -1278,7 +1278,7 @@ button {
 /* Scope EVERYTHING only inside .projects-hero */
 
 .projects-hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 88px);
   width: 100%;
   display: flex;
   align-items: center;
@@ -1288,6 +1288,7 @@ button {
     url("https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=2000");
   background-size: cover;
   background-position: center right;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -1697,11 +1698,22 @@ main {
     font-size: 28px !important;
   }
 
-  section {
+  section:not(.hero):not(.projects-hero):not(.about-hero) {
     padding: 80px 20px !important;
   }
 
 }
+
+@media (max-width: 900px) {
+
+  .projects-hero {
+    min-height: calc(100vh - 130px);
+    padding: 40px 6%;
+    background-position: center;
+  }
+
+}
+
 
 
 
