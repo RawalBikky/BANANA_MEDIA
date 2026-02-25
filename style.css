@@ -1483,11 +1483,44 @@ button {
    Append at the END of your existing CSS
    ========================================================= */
 
-/* ---------- HEADER / NAV ---------- */
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.raw-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 88px;              /* Desktop header height */
+  background: rgba(0,0,0,0.55);
+  z-index: 9999;
+}
+
+/* Push content below fixed header */
+main {
+  padding-top: 88px;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero {
+  min-height: calc(100vh - 88px);  /* Full screen minus header */
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================================
+   MOBILE HEADER / NAV
+   ========================================================= */
+
 @media (max-width: 900px) {
 
   .raw-header {
-    height: auto;
+    height: 120px;          /* Fixed mobile height */
     padding: 15px 0;
   }
 
@@ -1499,7 +1532,7 @@ button {
   }
 
   .raw-nav {
-    display: flex;      /* ← REMOVE display:none */
+    display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
@@ -1511,6 +1544,17 @@ button {
   .raw-cta button {
     width: 100%;
   }
+
+  /* Adjust hero height for taller mobile header */
+  .hero {
+    min-height: calc(100vh - 120px);
+  }
+
+  /* Adjust main padding for mobile header */
+  main {
+    padding-top: 120px;
+  }
+
 }
 /* new added lines */
 main {
@@ -1646,6 +1690,7 @@ main {
   }
 
 }
+
 
 
 
