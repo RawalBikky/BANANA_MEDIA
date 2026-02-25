@@ -201,11 +201,23 @@ button {
 /* MAIN TITLE */
 
 .hero-title{
-  font-size: clamp(36px, 4vw, 64px);
-  font-weight:800;
-  line-height:1.04;
-  letter-spacing:-0.02em;
-  text-shadow:0 10px 30px rgba(0,0,0,.7);
+  font-size: clamp(28px, 6vw, 64px);
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-shadow: 0 10px 30px rgba(0,0,0,.7);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+
+  .hero-title {
+    font-size: 30px;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+  }
+
 }
 
 /* SUB TITLE / We create */
@@ -1690,6 +1702,7 @@ main {
   }
 
 }
+
 
 
 
