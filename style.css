@@ -20,11 +20,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Main layout spacing */
-main {
-  padding-top: 90px;
-}
-
 /* Global Typography System , Bringing Stories to Life,
 One Frame at a Time. */
 h1, h2, h3, h4 {
@@ -1713,6 +1708,7 @@ main {
   }
 
 }
+
 
 
 
