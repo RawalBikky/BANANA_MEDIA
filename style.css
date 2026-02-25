@@ -1647,9 +1647,11 @@ main {
 
 
 /* ---------- PROJECTS HERO ---------- */
+/* ---------- PROJECTS HERO ---------- */
 @media (max-width: 600px) {
   .projects-hero__content {
     padding: 0 5%;
+    transform: translateY(-25px);
   }
 }
 
@@ -1709,6 +1711,7 @@ main {
   }
 
 }
+
 
 
 
