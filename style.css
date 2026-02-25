@@ -1290,6 +1290,7 @@ button {
 /* CONTENT */
 .projects-hero__content {
   max-width: 600px;
+  transform: translateY(-50px);
 }
 
 /* TITLE */
@@ -1708,6 +1709,7 @@ main {
   }
 
 }
+
 
 
 
