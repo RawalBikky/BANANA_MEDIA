@@ -1545,3 +1545,130 @@ button {
     color: #dcdcdc;
 
 }
+
+/* =========================================================
+   RESPONSIVE LAYER — MOBILE & TABLET COMPATIBILITY PATCH
+   Append at the END of your existing CSS
+   ========================================================= */
+
+/* ---------- HEADER / NAV ---------- */
+@media (max-width: 900px) {
+  .raw-nav-wrap {
+    padding: 0 20px;
+  }
+
+  .raw-nav {
+    display: none;
+  }
+
+  .raw-cta button {
+    padding: 9px 20px;
+    font-size: 13px;
+  }
+}
+
+/* ---------- HERO ---------- */
+@media (max-width: 600px) {
+  .hero {
+    padding: 0 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+/* ---------- GLOBAL SECTION SPACING ---------- */
+@media (max-width: 768px) {
+  section,
+  .concept-wrapper,
+  .video-types,
+  .about-agency,
+  .banana-projects {
+    padding: 70px 6%;
+  }
+}
+
+/* ---------- VIDEO GRID ---------- */
+@media (max-width: 1100px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- PRE / POST PRODUCTION CARDS ---------- */
+@media (max-width: 600px) {
+  .preproduction-card,
+  .postproduction-card {
+    padding: 26px 22px;
+  }
+
+  .pp-desc {
+    font-size: 15px;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+@media (max-width: 600px) {
+  .hos-container {
+    padding: 40px 20px 30px;
+  }
+
+  .hos-top h1 {
+    font-size: 32px;
+  }
+}
+
+/* ---------- ABOUT HERO ---------- */
+@media (max-width: 768px) {
+  .about-hero__title {
+    font-size: 46px;
+  }
+
+  .about-hero__content {
+    padding-left: 6%;
+  }
+}
+
+/* ---------- SERVICES HERO ---------- */
+@media (max-width: 600px) {
+  .services-content h1 {
+    font-size: 42px;
+  }
+}
+
+/* ---------- PROJECTS HERO ---------- */
+@media (max-width: 600px) {
+  .projects-hero__content {
+    padding: 0 5%;
+  }
+}
+
+/* ---------- CONCEPT SECTION ---------- */
+@media (max-width: 600px) {
+  .concept-left h2 {
+    font-size: 30px;
+  }
+
+  .concept-card {
+    padding: 26px 24px;
+  }
+}
+
+/* ---------- BANANA CARDS ---------- */
+@media (max-width: 600px) {
+  .banana-card {
+    height: 340px;
+  }
+}
