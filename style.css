@@ -813,6 +813,17 @@ button {
   }
 }
 
+@media (max-width: 1000px) {
+  .postproduction-card {
+    grid-template-columns: 1fr;
+    padding: 40px 30px;
+  }
+
+  .postproduction-wrapper .pp-images {
+    justify-content: center;
+  }
+}
+
 /* <!-- Post-Production Section --> */
 .postproduction-wrapper {
   min-height: 100vh;
@@ -1706,3 +1717,4 @@ button {
   }
 
 }
+
