@@ -838,16 +838,6 @@ button {
   backdrop-filter: blur(15px);
 }
 
-/* REUSE SAME CLASSES */
-.postproduction-wrapper .pp-left h2,
-.postproduction-wrapper .pp-intro,
-.postproduction-wrapper .pp-desc,
-.postproduction-wrapper .pp-images,
-.postproduction-wrapper .pp-img,
-.postproduction-wrapper .pp-right,
-.postproduction-wrapper .pp-item {
-  all: unset;
-}
 
 /* SAFE RE-APPLY SAME STYLES */
 .postproduction-wrapper .pp-left h2 { font-size: 34px; color: #fff; margin-bottom: 14px; font-weight: 700; }
@@ -959,14 +949,25 @@ button {
 
 /* Responsive */
 @media (max-width: 768px) {
+
   .services-hero {
-    height: 80vh;
-    padding: 0 6%;
+    height: auto;
+    min-height: 85vh;
+    padding: 120px 20px 60px;
     background-position: center;
   }
 
+  .services-content {
+    max-width: 100%;
+  }
+
   .services-content h1 {
-    font-size: 46px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .services-content p {
+    font-size: 14px;
   }
 }
 
@@ -1553,17 +1554,31 @@ button {
 
 /* ---------- HEADER / NAV ---------- */
 @media (max-width: 900px) {
+
+  .raw-header {
+    height: auto;
+    padding: 15px 0;
+  }
+
   .raw-nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
     padding: 0 20px;
   }
 
   .raw-nav {
-    display: none;
+    display: flex;      /* ← REMOVE display:none */
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .raw-cta {
+    width: 100%;
   }
 
   .raw-cta button {
-    padding: 9px 20px;
-    font-size: 13px;
+    width: 100%;
   }
 }
 
@@ -1585,12 +1600,8 @@ button {
 
 /* ---------- GLOBAL SECTION SPACING ---------- */
 @media (max-width: 768px) {
-  section,
-  .concept-wrapper,
-  .video-types,
-  .about-agency,
-  .banana-projects {
-    padding: 70px 6%;
+  section {
+    padding: 70px 20px;
   }
 }
 
@@ -1641,12 +1652,6 @@ button {
   }
 }
 
-/* ---------- SERVICES HERO ---------- */
-@media (max-width: 600px) {
-  .services-content h1 {
-    font-size: 42px;
-  }
-}
 
 /* ---------- PROJECTS HERO ---------- */
 @media (max-width: 600px) {
@@ -1671,4 +1676,33 @@ button {
   .banana-card {
     height: 340px;
   }
+}
+
+/* ----------HERO BUTTONS DISAPPEARING ---------- */
+
+@media (max-width: 600px) {
+
+  .hero-fill,
+  .hero-outline {
+    width: 100%;
+  }
+
+  .hero-buttons {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 36px !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  section {
+    padding: 80px 20px !important;
+  }
+
 }
