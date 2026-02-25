@@ -1512,7 +1512,16 @@ button {
     width: 100%;
   }
 }
+/* new added lines */
+main {
+  padding-top: 88px;
+}
 
+@media (max-width: 900px) {
+  main {
+    padding-top: 130px; /* adjust if header is taller */
+  }
+}
 /* ---------- HERO ---------- */
 @media (max-width: 600px) {
   .hero {
@@ -1637,6 +1646,7 @@ button {
   }
 
 }
+
 
 
 
