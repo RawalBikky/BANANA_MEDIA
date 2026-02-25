@@ -1278,7 +1278,7 @@ button {
 /* Scope EVERYTHING only inside .projects-hero */
 
 .projects-hero {
-  min-height: calc(100vh - 88px);
+  min-height: 100svh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1707,12 +1707,13 @@ main {
 @media (max-width: 900px) {
 
   .projects-hero {
-    min-height: calc(100vh - 130px);
+    min-height: 100svh;
     padding: 40px 6%;
     background-position: center;
   }
 
 }
+
 
 
 
