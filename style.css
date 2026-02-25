@@ -1309,7 +1309,7 @@ button {
     padding: 0 6%;
     background:
       linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.85) 50%, rgba(0,0,0,0.3) 100%),
-      url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');
+      url('https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=2000');
     background-position: center;
   }
 
@@ -1637,5 +1637,6 @@ button {
   }
 
 }
+
 
 
