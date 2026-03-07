@@ -1690,43 +1690,36 @@ background-position: center center;
 
 @media (max-width:768px){
 
-.raw-header{
-height:auto;
-padding:12px 0;
-}
-
 .raw-nav-wrap{
 flex-wrap:wrap;
+align-items:center;
 padding:0 16px;
-gap:8px;
 }
 
 .raw-logo{
+flex:1;
 font-size:16px;
 }
 
+.raw-cta{
+order:2;
+}
+
 .raw-nav{
+order:3;
 width:100%;
+display:flex;
 justify-content:space-between;
-margin-top:6px;
+margin-top:8px;
 }
 
 .raw-nav a{
 font-size:12px;
 }
 
-.raw-cta{
-width:100%;
-display:flex;
-justify-content:center;
-margin-top:6px;
-}
-
 .raw-cta button{
-padding:10px 20px;
-font-size:13px;
-width:100%;
-max-width:220px;
+padding:8px 16px;
+font-size:12px;
 }
 
 }
