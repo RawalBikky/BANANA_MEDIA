@@ -732,235 +732,153 @@ transform: translateY(-40px);
     font-size:28px;
   }
 }
-/* <!-- Pre-Production Section -->*/
+/* ===================================================
+   PRE + POST PRODUCTION SHARED SECTION
+=================================================== */
 
-.preproduction-wrapper {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(circle at top, #111, #000);
-  padding: 60px 20px;
-  font-family: "Inter", "Poppins", sans-serif;
+.preproduction-wrapper,
+.postproduction-wrapper{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:radial-gradient(circle at top,#111,#000);
+  padding:80px 20px;
+  font-family:"Inter","Poppins",sans-serif;
 }
 
-.preproduction-card {
-  max-width: 1300px;
-  width: 100%;
-  background: rgba(15, 15, 15, 0.95);
-  border-radius: 26px;
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 0 50px rgba(0,0,0,0.9);
-  padding: 60px;
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 60px;
-  backdrop-filter: blur(15px);
+/* CARD STRUCTURE */
+
+.preproduction-card,
+.postproduction-card{
+  max-width:1300px;
+  width:100%;
+  background:rgba(15,15,15,0.95);
+  border-radius:26px;
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow:0 0 50px rgba(0,0,0,0.9);
+  padding:60px;
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:60px;
+  backdrop-filter:blur(15px);
 }
 
 /* LEFT SIDE */
 
-.pp-left h2 {
-  font-size: 34px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 14px;
+.pp-left h2{
+  font-size:34px;
+  font-weight:700;
+  color:#fff;
+  margin-bottom:14px;
 }
 
-.pp-intro {
-  font-size: 13px;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.6);
-  margin-bottom: 18px;
+.pp-intro{
+  font-size:13px;
+  line-height:1.7;
+  color:rgba(255,255,255,0.6);
+  margin-bottom:18px;
 }
 
-.pp-desc {
-  font-size: 18px;
-  line-height: 1.6;
-  color: rgba(255,255,255,0.9);
-  margin-bottom: 45px;
+.pp-desc{
+  font-size:18px;
+  line-height:1.6;
+  color:rgba(255,255,255,0.9);
+  margin-bottom:45px;
 }
 
-.pp-desc span {
-  color: #ff8c1a;
+.pp-desc span{
+  color:#ff8c1a;
 }
 
 /* IMAGES */
 
-.pp-images {
-  display: flex;
-  gap: 22px;
+.pp-images{
+  display:flex;
+  gap:22px;
 }
 
-.pp-img {
-  width: 200px;
-  height: 180px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #000;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.6);
-  transition: 0.35s ease;
+.pp-img{
+  width:200px;
+  height:180px;
+  border-radius:16px;
+  overflow:hidden;
+  background:#000;
+  box-shadow:0 10px 35px rgba(0,0,0,0.6);
+  transition:0.35s ease;
 }
 
-.pp-img:hover {
-  transform: translateY(-6px) scale(1.02);
+.pp-img:hover{
+  transform:translateY(-6px) scale(1.02);
 }
 
-.pp-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.pp-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
 /* RIGHT SIDE */
 
-.pp-right {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
+.pp-right{
+  display:flex;
+  flex-direction:column;
+  gap:26px;
 }
 
-.pp-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
+.pp-item{
+  display:flex;
+  gap:16px;
+  align-items:flex-start;
 }
 
-.pp-item i {
-  font-size: 20px;
-  color: #ff8c1a;
-  margin-top: 4px;
+.pp-item i{
+  font-size:20px;
+  color:#ff8c1a;
+  margin-top:4px;
 }
 
-.pp-item h4 {
-  font-size: 14px;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 6px;
+.pp-item h4{
+  font-size:14px;
+  color:#fff;
+  font-weight:600;
+  margin-bottom:6px;
 }
 
-.pp-item p {
-  font-size: 12px;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.65);
+.pp-item p{
+  font-size:12px;
+  line-height:1.7;
+  color:rgba(255,255,255,0.65);
 }
 
-/* RESPONSIVE */
+/* ================= MOBILE ================= */
 
-@media (max-width: 1000px) {
+@media (max-width:1000px){
 
-  .preproduction-card,
-  .postproduction-card{
-    grid-template-columns: 1fr;
-    padding: 40px 30px;
-  }
-
-  .pp-images{
-    justify-content: center;
-  }
-
-}
-/* <!-- Post-Production Section --> */
-.postproduction-wrapper {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(circle at top, #111, #000);
-  padding: 60px 20px;
-  font-family: "Inter", "Poppins", sans-serif;
+.preproduction-card,
+.postproduction-card{
+  grid-template-columns:1fr;
+  padding:40px 30px;
 }
 
-.postproduction-card {
-  max-width: 1300px;
-  width: 100%;
-  background: rgba(15, 15, 15, 0.95);
-  border-radius: 26px;
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 0 50px rgba(0,0,0,0.9);
-  padding: 60px;
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 60px;
-  backdrop-filter: blur(15px);
+.pp-images{
+  justify-content:center;
 }
 
-/* FIX POST PRODUCTION USING SAME STRUCTURE AS PRE */
-
-.postproduction-card .pp-left h2 {
-  font-size: 34px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 14px;
 }
 
-.postproduction-card .pp-intro {
-  font-size: 13px;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.6);
-  margin-bottom: 18px;
+@media (max-width:600px){
+
+.pp-desc{
+  font-size:15px;
 }
 
-.postproduction-card .pp-desc {
-  font-size: 18px;
-  line-height: 1.6;
-  color: rgba(255,255,255,0.9);
-  margin-bottom: 45px;
+.pp-img{
+  width:160px;
+  height:150px;
 }
 
-.postproduction-card .pp-images {
-  display: flex;
-  gap: 22px;
 }
-
-.postproduction-card .pp-img {
-  width: 200px;
-  height: 180px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #000;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.6);
-  transition: 0.35s ease;
-}
-
-.postproduction-card .pp-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.postproduction-card .pp-right {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-}
-
-.postproduction-card .pp-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-
-.postproduction-card .pp-item i {
-  font-size: 20px;
-  color: #ff8c1a;
-  margin-top: 4px;
-}
-
-.postproduction-card .pp-item h4 {
-  font-size: 14px;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-.postproduction-card .pp-item p {
-  font-size: 12px;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.65);
-}
-
-
 /* SERVICES HERO SECTION */
 
 .services-hero {
@@ -1733,8 +1651,9 @@ order:2;
 order:3;
 width:100%;
 display:flex;
-justify-content:space-between;
-margin-top:8px;
+justify-content:space-around;
+margin-top:10px;
+padding-bottom:6px;
 }
 
 .raw-nav a{
@@ -1747,5 +1666,3 @@ font-size:12px;
 }
 
 }
-
-
