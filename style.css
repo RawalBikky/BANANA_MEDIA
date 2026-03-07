@@ -1705,5 +1705,37 @@ background-position: center center;
     height: 340px;
   }
 }
+/* ================= MOBILE HEADER FIX ================= */
+
+@media (max-width: 768px){
+
+  .raw-header{
+    height:auto;
+    padding-bottom:10px;
+  }
+
+  .raw-nav-wrap{
+    flex-wrap:wrap;
+    padding:0 20px;
+    gap:10px;
+  }
+
+  .raw-nav{
+    width:100%;
+    justify-content:space-between;
+    gap:0;
+    margin-top:6px;
+  }
+
+  .raw-nav a{
+    font-size:13px;
+  }
+
+  .raw-cta button{
+    padding:9px 18px;
+    font-size:13px;
+  }
+
+}
 
 
