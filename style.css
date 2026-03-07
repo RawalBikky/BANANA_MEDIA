@@ -848,16 +848,18 @@ transform: translateY(-40px);
 /* RESPONSIVE */
 
 @media (max-width: 1000px) {
-  .preproduction-card {
+
+  .preproduction-card,
+  .postproduction-card{
     grid-template-columns: 1fr;
     padding: 40px 30px;
   }
 
-  .pp-images {
+  .pp-images{
     justify-content: center;
   }
-}
 
+}
 /* <!-- Post-Production Section --> */
 .postproduction-wrapper {
   min-height: 100vh;
@@ -1670,3 +1672,4 @@ font-size:12px;
 }
 
 }
+
