@@ -188,7 +188,7 @@ button {
       rgba(0,0,0,0.85) 60%,
       rgba(0,0,0,0.75) 100%
     ),
-    url('assets/images/herobg.png');
+    url('assets/images/herobg.PNG');
 
   background-size: cover;
 background-position: center center;
@@ -1705,3 +1705,4 @@ background-position: center center;
     height: 340px;
   }
 }
+
