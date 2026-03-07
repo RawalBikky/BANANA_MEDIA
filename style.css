@@ -199,6 +199,16 @@ background-position: center center;
   margin: auto;
 }
 
+/* mobile hero change*/
+
+@media (max-width:768px){
+
+.hero-content{
+transform: translateY(-40px);
+}
+
+}
+
 /* MAIN TITLE */
 
 .hero-title{
@@ -1723,3 +1733,4 @@ font-size:12px;
 }
 
 }
+
