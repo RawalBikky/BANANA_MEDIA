@@ -883,69 +883,6 @@ transform: translateY(-40px);
   backdrop-filter: blur(15px);
 }
 
-/* REUSE SAME CLASSES */
-.postproduction-wrapper .pp-left h2,
-.postproduction-wrapper .pp-intro,
-.postproduction-wrapper .pp-desc,
-.postproduction-wrapper .pp-images,
-.postproduction-wrapper .pp-img,
-.postproduction-wrapper .pp-right,
-.postproduction-wrapper .pp-item {
-  all: unset;
-}
-
-/* SAFE RE-APPLY SAME STYLES */
-.postproduction-wrapper .pp-left h2 { font-size: 34px; color: #fff; margin-bottom: 14px; font-weight: 700; }
-.postproduction-wrapper .pp-intro { font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 18px; line-height: 1.7; }
-.postproduction-wrapper .pp-desc { font-size: 18px; color: rgba(255,255,255,0.9); margin-bottom: 45px; line-height: 1.6; }
-
-.postproduction-wrapper .pp-images { display: flex; gap: 22px; }
-
-.postproduction-wrapper .pp-img {
-  width: 200px;
-  height: 180px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #000;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.6);
-}
-
-.postproduction-wrapper .pp-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.postproduction-wrapper .pp-right {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-}
-
-.postproduction-wrapper .pp-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-
-.postproduction-wrapper .pp-item i {
-  font-size: 20px;
-  color: #ff8c1a;
-  margin-top: 4px;
-}
-
-.postproduction-wrapper .pp-item h4 {
-  font-size: 14px;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-.postproduction-wrapper .pp-item p {
-  font-size: 12px;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.65);
-}
 
 /* SERVICES HERO SECTION */
 
@@ -1733,4 +1670,3 @@ font-size:12px;
 }
 
 }
-
